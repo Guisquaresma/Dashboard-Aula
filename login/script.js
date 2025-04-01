@@ -5,6 +5,6 @@ function login() {
     if (username === "" || password === "") {
         alert("Preencha todos os campos!");
     } else {
-        window.location.href = "../index.html"; 
+        window.location.href = "../inicio.html"; 
     }
 }
