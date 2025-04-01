@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard Simples - Relatórios</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dashboard Simples</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="relatorios.html" class="active">Relatórios</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <button id="toggle-theme">Alternar Tema</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relatorio">
+            <h2>Relatórios</h2>
+            <h5>Selecione um relatório para visualizar:</h5>
+            <select id="relatorio-select">
+                <option value="">Selecione...</option>
+                <option value="vendas">Vendas</option>
+                <option value="usuarios">Usuários</option>
+            </select>
+            <button type="button" id="generate-report">Gerar Relatório</button>
+            <button type="button" id="cancel-action">Cancelar</button>
+            <div id="feedback" class="feedback-message">Relatório gerado com sucesso!</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dashboard Simples</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

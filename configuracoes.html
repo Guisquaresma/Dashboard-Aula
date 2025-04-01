@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard Simples - Configurações</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dashboard Simples</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="configuracoes.html" class="active">Configurações</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <button id="toggle-theme">Alternar Tema</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="configuracoes">
+            <h2>Configurações</h2>
+            <form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+                <button type="submit">Salvar Configurações</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dashboard Simples</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

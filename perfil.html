@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard - Perfil</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dashboard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+                <li><a href="perfil.html" class="active">Perfil</a></li>
+                <button id="toggle-theme">Alternar Tema</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="perfil">
+            <div class="perfil-header">
+                <div class="perfil-info">
+                    <div class="foto-perfil-container">
+                        <img src="img/naruto-profile-pictures-gb5deqx2bqx7o6x8.jpg" alt="Foto de Perfil" class="foto-perfil">
+                    </div>
+                    <div class="perfil-dados">
+                        <h1 id="nome-perfil">João Silva</h1>
+                        <p><span class="badge">Administrador</span></p>
+                        <p><strong>Email:</strong> <span id="email-perfil">joao@exemplo.com</span></p>
+                        <button class="btn-editar" id="btn-editar">Editar Perfil</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulário de Edição -->
+            <div class="form-editar" id="form-editar" style="display:none;">
+                <h3>Editar Perfil</h3>
+                <form id="editar-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" value="João Silva" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="joao@exemplo.com" required><br>
+
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="cancelar-edicao">Cancelar</button>
+                </form>
+            </div>
+
+            <div class="perfil-conteudo">
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <h3>Último Login</h3>
+                        <p>15 de março de 2025</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Posts Criados</h3>
+                        <p>120</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Comentários Feitos</h3>
+                        <p>85</p>
+                    </div>
+                </div>
+
+                <div class="perfil-grafico">
+                    <h3>Atividade Recentes</h3>
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dashboard</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
