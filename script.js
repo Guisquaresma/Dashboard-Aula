@@ -150,14 +150,3 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Alterações canceladas.");
     });
 });
-
-function login() {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-
-    if (username === "" || password === "") {
-        alert("Preencha todos os campos!");
-    } else {
-        window.location.href = "../inicio.html"; 
-    }
-}
